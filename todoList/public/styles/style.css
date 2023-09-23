@@ -1,0 +1,103 @@
+/* Reset some default styles */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #EEEEEE;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+.hoo {
+    background-color: #00ADB5;
+    max-width: 800px;
+    padding: 20px;
+    margin-left: 180px;
+}
+header {
+    color: #EEEEEE;
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+/* Style the main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the task lists */
+.task-list {
+    margin-bottom: 20px;
+}
+
+/* Style each task item */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style completed tasks with a strike-through */
+.task-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Style the task input form */
+.add-task h2 {
+    margin-top: 20px;
+}
+
+.task-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-list-select {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-button {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.complete-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .task-input, .task-list-select {
+        width: 100%;
+    }
+}
