@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Directions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('locationTracker.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #222831;
+            color: #eeeeee;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #EEEEEE;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #00adb5;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            align:centre;
+            float:centre;
+            margin: 10px ;
+            border: 1px solid #00adb5;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #00adb5;
+            color: #eeeeee;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #eeeeee;
+            color: #222831;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get Directions</h1>
+        <input type="text" id="locationInput" placeholder="Enter a location">
+        <button id="getDirectionsBtn">Get Directions</button>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const locationInput = document.getElementById('locationInput');
+            const getDirectionsBtn = document.getElementById('getDirectionsBtn');
+
+            getDirectionsBtn.addEventListener('click', function () {
+                const location = locationInput.value;
+                const mapsUrl = https://www.google.com/maps?q=${encodeURIComponent(location);
+                window.open(mapsUrl, '_blank');
+            });
+        });
+        
+    </script>
+</body>
+</html>
