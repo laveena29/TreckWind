@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourism Website Feedback - Contact Information</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Center-align the form container */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        .form-container {
+            background-color: #fff; /* White background */
+            color: #222831; /* Dark text color */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #00ADB5; /* Accent color */
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #222831; /* Dark text color */
+        }
+
+        input[type="submit"] {
+            background-color: #00ADB5; /* Accent color */
+            color: #fff; /* White text color */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #393E46; /* Darker accent color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Contact Information</h1>
+        <p>If you have any questions or concerns, please don't hesitate to reach out:</p>
+        <form action="/contact" method="post">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
